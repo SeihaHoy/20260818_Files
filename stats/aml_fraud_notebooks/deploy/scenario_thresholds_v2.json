@@ -1,0 +1,59 @@
+{
+  "scenario": "cash_structuring_5d",
+  "version": "2.0-proposed",
+  "status": "PENDING APPROVAL",
+  "prepared": "2026-09-19",
+  "parameters_by_segment": {
+    "retail_salaried": {
+      "min_single": 1000,
+      "min_count": 3,
+      "min_agg": 5000
+    },
+    "retail_self_employed": {
+      "min_single": 1000,
+      "min_count": 3,
+      "min_agg": 5000
+    },
+    "small_business": {
+      "min_single": 1500,
+      "min_count": 4,
+      "min_agg": 12000
+    },
+    "cash_intensive": {
+      "min_single": 1500,
+      "min_count": 5,
+      "min_agg": 20000
+    },
+    "corporate": {
+      "min_single": 2500,
+      "min_count": 3,
+      "min_agg": 15000
+    }
+  },
+  "parameters_current": {
+    "min_single": 2500,
+    "min_count": 3,
+    "min_agg": 10000,
+    "lookback": 5,
+    "cooldown": 30
+  },
+  "evidence": {
+    "backtest_period": "2025-01-01..2025-12-31",
+    "alerts_current": 1255,
+    "alerts_proposed": 725,
+    "str_alerts_current": 271,
+    "str_alerts_proposed": 270,
+    "notebook": "04_aml_threshold_tuning_workflow, 05_threshold_tuning_statistical_critique"
+  },
+  "residual_risk": "below-the-line activity is estimated by random sampling of non-alerted customers (see notebook 05, E7)",
+  "controls": {
+    "next_review_months": 6,
+    "quarterly_fn_sample_size": 300,
+    "safety_blanket_rules_retained": true
+  },
+  "approvals": {
+    "model_risk": null,
+    "mlro": null,
+    "head_of_compliance": null
+  }
+}

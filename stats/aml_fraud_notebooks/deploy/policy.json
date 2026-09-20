@@ -1,0 +1,6 @@
+{
+  "red": 0.12019232653939266,
+  "amber": 0.01867045557441467,
+  "rule": "RED = top 0.5% of training scores, AMBER = next 1.5%",
+  "model": "fraud_champion_logit"
+}
