@@ -1,0 +1,6 @@
+pyodbc
+pandas
+networkx
+matplotlib
+oracledb
+requests
